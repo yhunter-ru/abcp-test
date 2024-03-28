@@ -1,0 +1,49 @@
+/*   
+Author: yhunter 
+Author URI: https://yhunter.ru
+*/
+@use 'sass:math';
+@use "reset-css/sass/reset";
+@import "css-vars";
+
+$header-bg: var(--blue);
+$p2: calc(var(--p) * 2);
+$p: var(--p);
+$pv: var(--p-vertical);
+$mobile: 768px;
+
+@import "layout/wrapper";
+@import "theme/header";
+@import "modules/button";
+@import "layout/css-grid";
+@import "layout/masonry-grid";
+
+@import "modules/counter";
+
+body, html {
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    gap: $p;
+    flex-direction: column;
+}
+
+header {
+    background-color: $header-bg;
+    padding: $p2;
+}
+
+@import "theme/footer";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "modules/popup";

@@ -1,0 +1,25 @@
+<%~ include("/src/parts/header.phtml", {html: true}) %>
+
+    <main>
+
+        <div class="masonry-grid counter">
+          <div class="masonry-grid__item span2"></div>
+          <div class="masonry-grid__item span3"></div>
+          <div class="masonry-grid__item"></div>
+          <div class="masonry-grid__item span5"></div>
+          <div class="masonry-grid__item"></div>
+        </div>
+
+        <section class="auto-grid" style="
+            --auto-grid-max-columns: 4;
+            --auto-grid-min-size: 10rem;
+            --auto-grid-gap: 30px;">
+          <div class="auto-grid__item"></div>
+          <div class="auto-grid__item"></div>
+          <div class="auto-grid__item"></div>
+          <div class="auto-grid__item"></div>
+        </section>
+
+    </main>
+
+<%~ include("/src/parts/footer.phtml", {html: true}) %>

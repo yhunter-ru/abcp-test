@@ -1,0 +1,52 @@
+$font-size: var(--font-size);
+$dialog-shadow: var(--dialog-backdrop);
+$dialog-size: var(--dialog-size);
+$inits-scale: 1.5;
+
+dialog {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    min-width: $dialog-size;
+    min-height: $dialog-size;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size;
+    box-shadow: $dialog-shadow;
+    opacity: 0;
+    pointer-events: none;
+    scale: $inits-scale;
+    transition: $transition;
+
+    form {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    label {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        border: none;
+    }    
+}
+
+header {
+    #open-dialog:checked {
+        + dialog {
+            opacity: 1;
+            pointer-events: all;
+            scale: 1;
+        }
+    }
+
+    input {
+        position: absolute;
+        left: -9999px;
+    }
+}

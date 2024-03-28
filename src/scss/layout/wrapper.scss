@@ -1,0 +1,9 @@
+.wrapper {
+    max-width: var(--main-max-width);
+    margin: 0 auto;
+    padding: var(--p);
+    background-color: var(--bg);
+    display: flex;
+    gap: $p;
+    flex-direction: column;
+}

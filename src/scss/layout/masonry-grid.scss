@@ -1,0 +1,36 @@
+$item-height: var(--masonry-item-height);
+$item-right-w: var(--masonry-right-width);
+
+.masonry-grid {
+    $_bg: var(--vivid-green);
+
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    gap: var(--p);
+    grid-template-columns: 1fr;
+    background-color: $_bg;
+
+    &__item {
+        background-color: var(--green);
+        height: $item-height;
+    }    
+}
+
+@media (width > $mobile) {
+    .masonry-grid {
+        grid-template-columns: repeat(5, 1fr) $item-right-w;
+
+        .span2 {
+            grid-column: span 2;
+        }
+    
+        .span3 {
+            grid-column: span 3;
+        }
+    
+        .span5 {
+            grid-column: span 5;
+        }
+    }
+}

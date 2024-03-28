@@ -1,0 +1,5 @@
+$header-height: var(--header-height);
+
+header {
+    min-height: $header-height;
+}

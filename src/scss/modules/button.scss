@@ -1,0 +1,28 @@
+$font-size: var(--button-font);
+$r: var(--r);
+$color: var(--white);
+$bg: var(--light-blue);
+$dialog-bg: var(--blue);
+$transition: all .25s ease-in-out;
+$hover-opacity: .7;
+
+.button {
+    display: inline-block;
+    padding: $pv $p;
+    background-color: $bg;
+    border-radius: $r;
+    color: $color;
+    font-size: $font-size;
+    cursor: pointer;
+    transition: $transition;
+
+        &:hover {
+            opacity: $hover-opacity;
+        }
+}
+
+dialog {
+    .button {
+        background-color: $dialog-bg;
+    }
+}

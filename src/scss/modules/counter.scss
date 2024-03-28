@@ -1,0 +1,20 @@
+$counter-size: var(--font-size);
+$counter-color: var(--white);
+
+.counter {
+    counter-reset: num;
+
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: counter(num); 
+            counter-increment: num;
+            display: block;
+            color: $counter-color;
+            font-size: $counter-size;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello World</title>
+
+  <link href="css/style.88d25d2f.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <label for="open-dialog" class="button">Open pop-up button</label>
+      <input type="checkbox" name="open-dialog" id="open-dialog">
+      <dialog>
+        Pop-up
+        <form method="dialog">
+          <label for="open-dialog" class="button">x</label>
+        </form>
+      </dialog>
+    </header>
+    <main>
+
+        <div class="masonry-grid counter">
+          <div class="masonry-grid__item span2"></div>
+          <div class="masonry-grid__item span3"></div>
+          <div class="masonry-grid__item"></div>
+          <div class="masonry-grid__item span5"></div>
+          <div class="masonry-grid__item"></div>
+        </div>
+
+        <section class="auto-grid" style="
+            --auto-grid-max-columns: 4;
+            --auto-grid-min-size: 10rem;
+            --auto-grid-gap: 30px;">
+          <div class="auto-grid__item"></div>
+          <div class="auto-grid__item"></div>
+          <div class="auto-grid__item"></div>
+          <div class="auto-grid__item"></div>
+        </section>
+
+    </main>
+
+    <footer>
+    </footer>   
+  </div>
+</body>
+</html>
